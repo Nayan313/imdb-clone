@@ -1,25 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=   , initial-scale=1.0">
-    <title>NS YouTube</title>
-    <link rel="stylesheet" href="style.css">
+    <title>NS Movie</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <h1>Now Playing</h1>
-    <div class="now card-section">
-    </div>
-    <h1>Top Movie</h1>
-    <div class="movie card-section">
-    </div>
-    <h1>Top Tv</h1>
-   <div class="tv card-section">
-   </div>
-    <h1>upcoming</h1>
-   <div class="upcoming card-section">
-   </div>
 
+<body>
+<header>
+    <div class="logo">logo</div>
+    <div class="search-bar">
+        <input type="search" name="" id="" placeholder="Search here">
+    </div>
+</header>
+
+
+    <div class="slideshow-container">
+        <div class="in-slideshow-container">
+            <div class="mySlides fade" style="display: block;">
+                <div class="banner-detail">
+                    <img  src="https://image.tmdb.org/t/p/w500/zNE88KjSX2nDSWjdsNqeIFGAXo8.jpg" alt="">
+                    <div class="movie-detail">
+                        <h1>Kalki 2898 - AD</h1>
+                        <div class="gence"><span>Action</span> <span>crime</span> <span>sci-fi</span></div>
+                        <p class="information">zdfjks fkesjfemf ekj f,mekfj ksgjks gvr,msgv ksr v srgfvkjreb gvergkgbrengvmn rfnv er</p>
+                    </div>
+                </div>
+                <div class="backFilter"></div>
+                <img class="background" src="https://image.tmdb.org/t/p/original//lOKQYk0IHZ3U6y1USV8dL3StXaE.jpg">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="dot-section">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <div class="navigate">
+        <div class="prev slidenavigateBtn" onclick="prevSlide()">&#10094;</div>
+        <div class="next slidenavigateBtn" onclick="showSlides()">&#10095;</div>
+    </div>
+    </div>
+
+    </div>
+
+<div class="main">
+    <h1>Top Movie</h1>
+    <div class="cardSlider" id="cardSlider1">
+        <button class="prevBtn" id="cardSButton" onclick="cardS('cardSlider1', -1)">&#10094;</button>
+        <div class="card-section">
+            <div class="cardSlides movie">
+            </div>
+        </div>
+        <button class="nextBtn" id="cardSButton" onclick="cardS('cardSlider1', 1)">&#10095;</button>
+    </div>
+    <h1>Tv</h1>
+    <div class="cardSlider" id="cardSlider2">
+        <button class="prevBtn" id="cardSButton" onclick="cardS('cardSlider2', -2)">&#10094;</button>
+        <div class="card-section">
+            <div class="cardSlides tv">
+            </div>
+        </div>
+        <button class="nextBtn" id="cardSButton" onclick="cardS('cardSlider2', 2)">&#10095;</button>
+    </div>
+    <h1>upcoming</h1>
+    <div class="cardSlider" id="cardSlider3">
+        <button class="prevBtn" id="cardSButton" onclick="cardS('cardSlider3', -3)">&#10094;</button>
+        <div class="card-section">
+            <div class="cardSlides upcoming">
+            </div>
+        </div>
+        <button class="nextBtn" id="cardSButton" onclick="cardS('cardSlider3', 3)">&#10095;</button>
+    </div>
     
-    <script src="script.js"></script> </body>
+</div>
+<video src="https://rr2---sn-4g5edndd.googlevideo.com/videoplayback?expire=1719681049&ei=uet_ZumUCfKCi9oPjt-f2A0&ip=2a01%3A4f8%3A1c1c%3A15cc%3A6a20%3A3e06%3Aa26f%3Aa732&id=o-ALb60kFEmVwn69zNWD_S7RpV414wiveErl5qnK8ns4T8&itag=139&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=6t&mm=31%2C26&mn=sn-4g5edndd%2Csn-f5f7knee&ms=au%2Conr&mv=m&mvi=2&pl=47&initcwndbps=490000&vprv=1&svpuc=1&mime=audio%2Fmp4&rqh=1&gir=yes&clen=31852367&dur=5223.467&lmt=1719652773478272&mt=1719658856&fvip=4&keepalive=yes&c=ANDROID_TESTSUITE&txp=6308224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRgIhAKFeXDwKXoWDJR7c4-sqWVjI9L_lxjB1_jtnlrv25MvOAiEAu2NvyHOFE-ikb91DHhqefMymMBCuYbD6FqCEBrsKk3s%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AHlkHjAwRQIgdXXHPS_ajXLWkfZ1u4Vl8VvcmWS13L2DA_UWEHSHSOsCIQCD5gVeibdXDoUfY69lZkJLuDghLaopqjglxEa6uHGPQw%3D%3D" controls></video>
+    <script src="js/script.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
 </html>
