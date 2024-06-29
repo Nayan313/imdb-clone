@@ -1,0 +1,14 @@
+.card-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.cards{
+    width: 200px;
+
+}
+.cards img{
+    width: 100%;
+}
