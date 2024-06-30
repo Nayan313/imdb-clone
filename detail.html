@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Background Video with Mute/Unmute</title>
+</head>
+
+<body>
+    <div class="banner">
+        <!-- <div class="banner-detail-detail-page">
+            <img src="https://image.tmdb.org/t/p/w500//zNE88KjSX2nDSWjdsNqeIFGAXo8.jpg" alt="">
+
+            <h1>Kalki 2898 Ad</h1>
+
+        </div>
+        <div class="liner-background"></div>
+        <div class="liner-background-bottom"></div> -->
+        <video id="video" autoplay muted loop>
+        <!-- <video id="video" controls> -->
+           <source src="https://rr4---sn-4g5lznlz.googlevideo.com/videoplayback?expire=1719774479&ei=r1iBZpSeConC6dsPtJOIkAM&ip=2a01%3A4f8%3A1c1c%3A15cc%3A36a6%3Ad3ac%3Aa002%3A60aa&id=o-AALkTKkP0D2ROsqk9iscO7i0INJCNRNPFmXxEEdWdQU1&itag=136&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=S8&mm=31%2C26&mn=sn-4g5lznlz%2Csn-f5f7lnld&ms=au%2Conr&mv=m&mvi=4&pl=47&initcwndbps=762500&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&gir=yes&clen=22292483&dur=179.960&lmt=1714804877517151&mt=1719752463&fvip=2&keepalive=yes&c=ANDROID_TESTSUITE&txp=4535434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRAIgJ0lrh2UjfN9UnTPRspiVEgIpul2bpJXkq83w2d1pG7wCIGKY-6UuLlKg7chQLz2xzNchSpLmPyBu_Ia7vTBMIyCS&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AHlkHjAwRgIhAMDO0oClzGTpG1hG2z5Iz261DONdpSe7SU3bRWc9D_HuAiEApSb33DhtxwDByrzooxzmSUUUOTX-xMuJgsnxa9zTRqc%3D" type="">
+            Your browser does not support the video tag.
+        </video>
+        <audio id="audio"
+            src="https://rr4---sn-4g5lznlz.googlevideo.com/videoplayback?expire=1719774479&ei=r1iBZpSeConC6dsPtJOIkAM&ip=2a01%3A4f8%3A1c1c%3A15cc%3A36a6%3Ad3ac%3Aa002%3A60aa&id=o-AALkTKkP0D2ROsqk9iscO7i0INJCNRNPFmXxEEdWdQU1&itag=139&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=S8&mm=31%2C26&mn=sn-4g5lznlz%2Csn-f5f7lnld&ms=au%2Conr&mv=m&mvi=4&pl=47&initcwndbps=762500&vprv=1&svpuc=1&mime=audio%2Fmp4&rqh=1&gir=yes&clen=1099043&dur=180.093&lmt=1714803327360116&mt=1719752463&fvip=2&keepalive=yes&c=ANDROID_TESTSUITE&txp=4532434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRQIhAKGVEDdSf8HSTxa4L7leP4dCJhU6eeF5i3PJcV9CGqwVAiA8ejd0ZYzpUFf4LosCLuLe5eLmvNuVdImglKpry9nqsg%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AHlkHjAwRgIhAMDO0oClzGTpG1hG2z5Iz261DONdpSe7SU3bRWc9D_HuAiEApSb33DhtxwDByrzooxzmSUUUOTX-xMuJgsnxa9zTRqc%3D"
+            loop></audio>
+        <div class="controls">
+            <div class="play-pauseBtn">
+                <button id="playBtn" class="btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
+                        <defs>
+                            <mask id="ipSPlay0">
+                                <g fill="none" stroke-linejoin="round" stroke-width="4">
+                                    <path fill="#fff" stroke="#fff"
+                                        d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z" />
+                                    <path fill="#000" stroke="#000"
+                                        d="M20 24v-6.928l6 3.464L32 24l-6 3.464l-6 3.464z" />
+                                </g>
+                            </mask>
+                        </defs>
+                        <path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSPlay0)" />
+                    </svg>
+                </button>
+                <button id="pauseBtn" class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 20 20">
+                        <path fill="currentColor"
+                            d="M2.93 17.07A10 10 0 1 1 17.07 2.93A10 10 0 0 1 2.93 17.07M7 6v8h2V6zm4 0v8h2V6z" />
+                    </svg></button>
+            </div>
+        </div>
+        <button onclick="MutedPlay()" id="muteBtn" class="btn">Mute</button>
+    </div>
+
+    <script src="js/detail.js"></script>
+</body>
+
+</html>

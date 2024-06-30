@@ -1,0 +1,68 @@
+.banner{
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+}
+.banner-detail-detail-page{
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    top: 0;
+    left: 10%;
+    width: 70%;
+    z-index: 1;
+}
+.banner-detail-detail-page img{
+    height: 300px;
+}
+.liner-background-bottom,
+.liner-background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background-image: linear-gradient(90deg, #000, #00000000);
+}
+.liner-background-bottom{
+    height: 50%;
+    width: 100%;
+    top: 48%;
+    background-image: linear-gradient(360deg, #000, #00000000);
+}
+video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.controls {
+    display: flex;
+justify-content: flex-end;
+    height: 40px;
+    width: 140px;
+    position: absolute;
+   bottom: 20px;
+    right: 20px;
+    z-index: 1;
+}
+.play-pauseBtn{
+    right: 9%;
+}
+.btn {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+.btn svg{
+    height: 20px;
+    width: 20px;
+}

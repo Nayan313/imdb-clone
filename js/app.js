@@ -33,8 +33,7 @@ async function SlideDatafn() {
 SlideDatafn()
 
 async function SliderMake(SliderData) {
-  let slider = ''; // Initialize slider outside the loop
-
+  let slider = ''; 
   try {
     for (let j = 0; j < 5; j++) {
       const movieId = SliderData[j].id;
@@ -43,7 +42,7 @@ async function SliderMake(SliderData) {
         throw new Error('Network response was not ok');
       }
       const movieData = await response.json();
-      // console.log(movieData)
+      console.log(movieData)
       slider += `
         <div class="mySlides fade" style="display: block;">
           <div class="banner-detail">
@@ -62,7 +61,6 @@ async function SliderMake(SliderData) {
       `;
     }
 
-    // Set innerHTML of slideshow container outside the loop
     document.querySelector(".in-slideshow-container").innerHTML = slider;
   } catch (error) {
     console.error('Error fetching data:', error);
@@ -188,33 +186,33 @@ fetch(url,
   })
   .catch((err) => console.error(err));
 
-let q = "4k city"
-  const RapidYTUrl = `https://youtube-v31.p.rapidapi.com/search?q=${encodeURIComponent(q)}&part=snippet%2Cid&regionCode=IN&maxResults=50&order=date`;
-  const RapidYTOptions = {
-    method: 'GET',
-    headers: {
-      'x-rapidapi-key': '67e97149b7msh7f095fdb1e793cep17e98cjsn4f58f7f2c3bb',
-      'x-rapidapi-host': 'youtube-v31.p.rapidapi.com'
-    }
-  };
+// let q = "Kalki 2898 - AD movie trailer"
+//   const RapidYTUrl = `https://youtube-v31.p.rapidapi.com/search?q=${encodeURIComponent(q)}&part=snippet%2Cid&regionCode=IN&maxResults=50&order=relevance`;
+//   const RapidYTOptions = {
+//     method: 'GET',
+//     headers: {
+//       'x-rapidapi-key': '67e97149b7msh7f095fdb1e793cep17e98cjsn4f58f7f2c3bb',
+//       'x-rapidapi-host': 'youtube-v31.p.rapidapi.com'
+//     }
+//   };
   
-  fetch(RapidYTUrl, RapidYTOptions).then((res) => res.json()).then((data) => {
-    console.log(data)
-    let id = data.items[0].id.videoId;
-    console.log(id)
-    YtDowanloadLink(id)
-  })
+//   fetch(RapidYTUrl, RapidYTOptions).then((res) => res.json()).then((data) => {
+//     console.log(data)
+//     let id = data.items[0].id.videoId;
+//     console.log(id)
+//     YtDowanloadLink(id)
+//   })
 
-  const RapidYTDowanloadOptions = {
-    method: 'GET',
-    headers: {
-      'x-rapidapi-key': '67e97149b7msh7f095fdb1e793cep17e98cjsn4f58f7f2c3bb',
-      'x-rapidapi-host': 'ytstream-download-youtube-videos.p.rapidapi.com'
-    }
-  };
-  async function YtDowanloadLink(id){
-  const RapidYTDowanloadUrl = `https://ytstream-download-youtube-videos.p.rapidapi.com/dl?id=${id}`;
-fetch(RapidYTDowanloadUrl, RapidYTDowanloadOptions).then((res) => res.json()).then((data) => {
-  console.log(data)
-  console.log(data.adaptiveFormats[14].url)
-})}
+//   const RapidYTDowanloadOptions = {
+//     method: 'GET',
+//     headers: {
+//       'x-rapidapi-key': '67e97149b7msh7f095fdb1e793cep17e98cjsn4f58f7f2c3bb',
+//       'x-rapidapi-host': 'ytstream-download-youtube-videos.p.rapidapi.com'
+//     }
+//   };
+//   async function YtDowanloadLink(id){
+//   const RapidYTDowanloadUrl = `https://ytstream-download-youtube-videos.p.rapidapi.com/dl?id=${id}`;
+// fetch(RapidYTDowanloadUrl, RapidYTDowanloadOptions).then((res) => res.json()).then((data) => {
+//   console.log(data)
+//   console.log(data.adaptiveFormats[14].url)
+// })}
