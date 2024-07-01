@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 * {
   padding: 0;
   margin: 0;
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Montserrat", sans-serif;
 }
 
 :root {
   --main-color: #86B5D5;
   --poster-average-color: #181818;
   --font-color: #ffffff;
-  --background: #0e0e0e;
+  --background: #1d1d1d;
   --secondary-background: #181818;
   --song-card: #212121;
   --navigation-btn: #ffffff;
@@ -20,9 +21,11 @@
 }
 
 body {
-  background-color: black;
+  background-color: var(--background);
 }
-
+a{
+  text-decoration: none;
+}
 header {
   background-color: #11111165;
   backdrop-filter: blur(20px);
@@ -92,7 +95,6 @@ header {
   border-radius: 20px;
   position: relative;
 }
-
 
 
 .loader-img {
@@ -386,7 +388,9 @@ header {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
-
+a>.title{
+  margin-top: 10px;
+}
 
 button.prevBtn,
 button.nextBtn {

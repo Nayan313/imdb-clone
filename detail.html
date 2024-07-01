@@ -6,55 +6,188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/detail.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Background Video with Mute/Unmute</title>
+    <title>detail</title>
 </head>
 
 <body>
+    <div class="logo-banner-detail-page">
+        <img src="./assest/img/logo.png" alt="">
+    </div>
     <div class="banner">
-        <!-- <div class="banner-detail-detail-page">
-            <img src="https://image.tmdb.org/t/p/w500//zNE88KjSX2nDSWjdsNqeIFGAXo8.jpg" alt="">
-
-            <h1>Kalki 2898 Ad</h1>
-
+        <div class="banner-detail-page">
+            <img class="PosterMovie"
+                src=""
+                alt="">
+            <!-- <img class="PosterMovie"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Scarlett_Johansson_by_Gage_Skidmore_2_%28cropped%2C_2%29.jpg/640px-Scarlett_Johansson_by_Gage_Skidmore_2_%28cropped%2C_2%29.jpg"
+                alt=""> -->
+            <h1 class="MovieName">Scarlett Johansson </h1>
         </div>
+        <img class="backgroundDetailPage"
+            src=""
+            alt="">
+        <!-- <img class="backgroundDetailPage"
+            src="https://hips.hearstapps.com/hmg-prod/images/american-actress-scarlett-johansson-at-cannes-film-festival-news-photo-1685449533.jpg"
+            alt=""> -->
         <div class="liner-background"></div>
-        <div class="liner-background-bottom"></div> -->
-        <video id="video" autoplay muted loop>
-        <!-- <video id="video" controls> -->
-           <source src="https://rr4---sn-4g5lznlz.googlevideo.com/videoplayback?expire=1719774479&ei=r1iBZpSeConC6dsPtJOIkAM&ip=2a01%3A4f8%3A1c1c%3A15cc%3A36a6%3Ad3ac%3Aa002%3A60aa&id=o-AALkTKkP0D2ROsqk9iscO7i0INJCNRNPFmXxEEdWdQU1&itag=136&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=S8&mm=31%2C26&mn=sn-4g5lznlz%2Csn-f5f7lnld&ms=au%2Conr&mv=m&mvi=4&pl=47&initcwndbps=762500&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&gir=yes&clen=22292483&dur=179.960&lmt=1714804877517151&mt=1719752463&fvip=2&keepalive=yes&c=ANDROID_TESTSUITE&txp=4535434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRAIgJ0lrh2UjfN9UnTPRspiVEgIpul2bpJXkq83w2d1pG7wCIGKY-6UuLlKg7chQLz2xzNchSpLmPyBu_Ia7vTBMIyCS&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AHlkHjAwRgIhAMDO0oClzGTpG1hG2z5Iz261DONdpSe7SU3bRWc9D_HuAiEApSb33DhtxwDByrzooxzmSUUUOTX-xMuJgsnxa9zTRqc%3D" type="">
-            Your browser does not support the video tag.
-        </video>
-        <audio id="audio"
-            src="https://rr4---sn-4g5lznlz.googlevideo.com/videoplayback?expire=1719774479&ei=r1iBZpSeConC6dsPtJOIkAM&ip=2a01%3A4f8%3A1c1c%3A15cc%3A36a6%3Ad3ac%3Aa002%3A60aa&id=o-AALkTKkP0D2ROsqk9iscO7i0INJCNRNPFmXxEEdWdQU1&itag=139&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=S8&mm=31%2C26&mn=sn-4g5lznlz%2Csn-f5f7lnld&ms=au%2Conr&mv=m&mvi=4&pl=47&initcwndbps=762500&vprv=1&svpuc=1&mime=audio%2Fmp4&rqh=1&gir=yes&clen=1099043&dur=180.093&lmt=1714803327360116&mt=1719752463&fvip=2&keepalive=yes&c=ANDROID_TESTSUITE&txp=4532434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRQIhAKGVEDdSf8HSTxa4L7leP4dCJhU6eeF5i3PJcV9CGqwVAiA8ejd0ZYzpUFf4LosCLuLe5eLmvNuVdImglKpry9nqsg%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AHlkHjAwRgIhAMDO0oClzGTpG1hG2z5Iz261DONdpSe7SU3bRWc9D_HuAiEApSb33DhtxwDByrzooxzmSUUUOTX-xMuJgsnxa9zTRqc%3D"
-            loop></audio>
-        <div class="controls">
-            <div class="play-pauseBtn">
-                <button id="playBtn" class="btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
-                        <defs>
-                            <mask id="ipSPlay0">
-                                <g fill="none" stroke-linejoin="round" stroke-width="4">
-                                    <path fill="#fff" stroke="#fff"
-                                        d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z" />
-                                    <path fill="#000" stroke="#000"
-                                        d="M20 24v-6.928l6 3.464L32 24l-6 3.464l-6 3.464z" />
-                                </g>
-                            </mask>
-                        </defs>
-                        <path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSPlay0)" />
-                    </svg>
-                </button>
-                <button id="pauseBtn" class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 20 20">
-                        <path fill="currentColor"
-                            d="M2.93 17.07A10 10 0 1 1 17.07 2.93A10 10 0 0 1 2.93 17.07M7 6v8h2V6zm4 0v8h2V6z" />
-                    </svg></button>
+        <div class="liner-background-bottom"></div>
+    </div>
+    <div class="main">
+
+        <div class="More-detail">
+            <div class="part-detailing">
+                <div class="title-detailing">
+                    <h1>Production Companies Name</h1>
+                </div>
+                <div class="value-detailing">
+                    <p class="ProductionName">Marvel Studios</p>
+                </div>
+            </div>
+            <div class="part-detailing">
+                <div class="title-detailing">
+                    <h1>Production Companies</h1>
+                </div>
+                <div class="value-detailing ProductionImgSection">
+                    <img class="ProductionImg" src="" alt="">
+                </div>
+            </div>
+            <div class="part-detailing">
+                <div class="title-detailing">
+                    <h1>Tagline</h1>
+                </div>
+                <div class="value-detailing">
+                    <p class="TagLine">Avenge the fallen.</p>
+                </div>
+            </div>
+            <div class="part-detailing">
+                <div class="title-detailing">
+                    <h1>overview</h1>
+                </div>
+                <div class="value-detailing">
+                    <p class="overView">After the devastating events of Avengers: Infinity War, the universe is in ruins
+                        due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers
+                        must assemble once more in order to undo Thanos' actions and restore order to the universe once
+                        and for all, no matter what consequences may be in store.</p>
+                </div>
+            </div>
+            <div class="part-detailing">
+                <div class="title-detailing">
+                    <h1>Rating</h1>
+                </div>
+                <div class="value-detailing">
+                    <p class="rating">8.5</p>
+                </div>
+            </div>
+            <div class="part-detailing">
+                <div class="title-detailing">
+                    <h1>Budget</h1>
+                </div>
+                <div class="value-detailing">
+                    <p class="budgetValue">$356,000,000.00</p>
+                </div>
+            </div>
+            <div class="part-detailing">
+                <div class="title-detailing">
+                    <h1>Revenue</h1>
+                </div>
+                <div class="value-detailing">
+                    <p class="RevenueValue">$2,799,439,100.00</p>
+                </div>
+            </div>
+            <div class="part-detailing">
+                <div class="title-detailing">
+                    <h1>Genres</h1>
+                </div>
+                <div class="value-detailing gence-more-detailing">
+                </div>
             </div>
         </div>
-        <button onclick="MutedPlay()" id="muteBtn" class="btn">Mute</button>
+        <div class="cast">
+            <h1 class="Card-sec-title">Cast</h1>
+            <div class="cardSlider" id="cardSlider4">
+                <button class="prevBtn" id="cardSButton" onclick="cardS('cardSlider4', -4)">&#10094;</button>
+                <div class="card-section">
+                    <div class="cardSlides cast-card-section">
+                        <div class="cast-card cardS">
+                            <img src="https://image.tmdb.org/t/p/w500//yAvq3EG5W5WaegZHB7gNdlM2KED.jpg" alt="">
+                            <p><b>Amitabh Bachchan</b></p>
+                            <p>Ashwatthama</p>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="nextBtn" id="cardSButton" onclick="cardS('cardSlider4', 4)">&#10095;</button>
+            </div>
+        </div>
+        <div class="crew">
+            <h1 class="Card-sec-title">Crew</h1>
+            <div class="cardSlider" id="cardSlider5">
+                <button class="prevBtn" id="cardSButton" onclick="cardS('cardSlider5', -5)">&#10094;</button>
+                <div class="card-section">
+                    <div class="cardSlides crew-card-section">
+                        <div class="crew-card cardS">
+                            <img src="https://image.tmdb.org/t/p/w500//yAvq3EG5W5WaegZHB7gNdlM2KED.jpg" alt="">
+                            <p><b>Amitabh Bachchan</b></p>
+                            <p>Ashwatthama</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="nextBtn" id="cardSButton" onclick="cardS('cardSlider5', 5)">&#10095;</button>
+            </div>
+        </div>
+        <div class="Photos">
+            <h1 class="Card-sec-title">Photos</h1>
+            <div class="cardSlider cardPhoto" id="cardSlider7">
+                <button class="prevBtn" onclick="cardS('cardSlider7', -1)">&#10094;</button>
+                <div class="card-section">
+                    <div class="cardSlides Photos-card-section">
+                    </div>
+                </div>
+                <button class="nextBtn" onclick="cardS('cardSlider7', 1)">&#10095;</button>
+            </div>
+            
+        </div>
+        <div class="Recommendations">
+            <h1 class="Card-sec-title">Recommendations</h1>
+            <div class="cardSlider" id="cardSlider6">
+                <button class="prevBtn" id="cardSButton" onclick="cardS('cardSlider6', -6)">&#10094;</button>
+                <div class="card-section">
+                    <div class="cardSlides Recommendations-card-section">
+                        <div class="Recommendations-card cardS">
+                            <img src="https://image.tmdb.org/t/p/w500//yAvq3EG5W5WaegZHB7gNdlM2KED.jpg" alt="">
+                            <p><b>Amitabh Bachchan</b></p>
+                            <p>Ashwatthama</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="nextBtn" id="cardSButton" onclick="cardS('cardSlider6', 6)">&#10095;</button>
+            </div>
+        </div>
+        <div class="Review">
+            <h1 class="Card-sec-title">Review</h1>
+            <div class="cardSlider" id="cardSlider6">
+                <button class="prevBtn" id="cardSButton" onclick="cardS('cardSlider7', -7)">&#10094;</button>
+                <div class="card-section">
+                    <div class="cardSlides Review-card-section">
+                        <div class="Review-card cardS">
+                           
+                        </div>
+                    </div>
+                </div>
+                <button class="nextBtn" id="cardSButton" onclick="cardS('cardSlider7', 7)">&#10095;</button>
+            </div>
+        </div>
+        
     </div>
 
+
+    <a href="index.html">Home</a>
+
+
+
+    <script src="js/autentication.js"></script>
     <script src="js/detail.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

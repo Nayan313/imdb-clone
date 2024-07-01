@@ -96,3 +96,15 @@ function cardS(cardSliderId, direction) {
 
 
 
+function moveSlider(sliderId, direction) {
+  const slider = document.getElementById(sliderId);
+  if (!slider) return; // Ensure slider element exists
+  
+  const cardSlides = slider.querySelector('.cardPhoto');
+  if (!cardSlides) return; // Ensure cardSlides element exists
+  
+  const cardWidth = cardSlides.clientWidth;
+  const scrollAmount = cardWidth * direction;
+  
+  cardSlides.scrollLeft += scrollAmount;
+}

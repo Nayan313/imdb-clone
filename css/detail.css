@@ -1,10 +1,18 @@
-.banner{
+.logo-banner-detail-page{
+    position: absolute;
+    top: 40px;
+    left: 140px;
+    width: 250px;
+    z-index: 13;
+}
+.banner {
     position: relative;
     height: 80vh;
     width: 100%;
     overflow: hidden;
 }
-.banner-detail-detail-page{
+
+.banner-detail-page {
     height: 100%;
     position: absolute;
     display: flex;
@@ -14,55 +22,129 @@
     width: 70%;
     z-index: 1;
 }
-.banner-detail-detail-page img{
+.banner-detail-page h1{
+    margin-left: 25px;
+    width: 90%;
+    font-size: 3.5rem;
+    font-family: "Syne", sans-serif;
+}
+
+.banner-detail-page img {
     height: 300px;
 }
+
+.backgroundDetailPage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
 .liner-background-bottom,
-.liner-background{
+.liner-background {
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
     width: 50%;
-    background-image: linear-gradient(90deg, #000, #00000000);
-}
-.liner-background-bottom{
-    height: 50%;
-    width: 100%;
-    top: 48%;
-    background-image: linear-gradient(360deg, #000, #00000000);
-}
-video {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 80%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
+    background-image: linear-gradient(90deg, var(--background), #00000000);
 }
 
-.controls {
+.liner-background-bottom {
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    background-image: linear-gradient(360deg, var(--background), #00000000);
+}
+.More-detail{
+    margin: 50px 0;
+}
+
+.part-detailing{
+    padding: 30px 0;
     display: flex;
-justify-content: flex-end;
-    height: 40px;
-    width: 140px;
-    position: absolute;
-   bottom: 20px;
-    right: 20px;
-    z-index: 1;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #636262;
 }
-.play-pauseBtn{
-    right: 9%;
+.part-detailing .title-detailing,
+.part-detailing .value-detailing{
+    width: 45%;
+    padding: 0 2.5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
 }
-.btn {
-    position: absolute;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    margin: 5px;
+.part-detailing .value-detailing{
+    justify-content: flex-start;
+    border-left: 1px solid #636262;
 }
-.btn svg{
-    height: 20px;
-    width: 20px;
+.title-detailing h1{
+    font-size: 1.5rem;
+    font-family: "Syne", sans-serif;
+}
+.ProductionImgSection{
+    display: flex;
+}
+.ProductionImgSection img{
+    width: 200px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.gence-more-detailing{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    
+}
+.gence-more-detailing span{
+    padding: 5px 10px;
+    width: fit-content;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  font-size: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.Card-sec-title{
+    font-family: "Syne", sans-serif;
+    padding: 6px 0;
+}
+ .cardS{
+    min-width: 180px;
+    width: 180px;
+    margin-right: 10px;
+}
+ .cardS .img-section{
+    height: 270px;
+    width: 180px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+ .cardS img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+.img-section-photos{
+    margin-right: 10px;
+    height: 500px;
+    min-width: 700px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.img-section-photos img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
