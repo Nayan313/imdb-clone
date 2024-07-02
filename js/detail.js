@@ -17,13 +17,13 @@ async function load() {
 
             for (cast of response.cast) {
                 CastCard += `
-     <div class="cast-card cardS">
+     <a href="person.html?id=${cast.id}" class="cast-card cardS">
      <div class="img-section">
                             <img src="https://image.tmdb.org/t/p/w500/${cast.profile_path}" alt="" onerror="this.onerror=null; this.src='./assest/img/cast.png';">
                             </div>
                             <p><b>${cast.original_name}</b></p>
                             <p>${cast.character}</p>
-                        </div>`
+                        </a>`
             }
             document.querySelector(".cast-card-section").innerHTML = CastCard;
         })

@@ -136,7 +136,7 @@ header {
   width: 100%;
   bottom: 0;
   height: 100%;
-  background: linear-gradient(359deg, black, transparent);
+  background: linear-gradient(360deg, var(--background), transparent);
   z-index: 1;
 }
 

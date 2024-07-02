@@ -1,0 +1,16 @@
+.bioProfile{
+    width: 100%;
+    flex-direction: column;
+}
+.bioProfile .title-detailing{
+    padding: 10px 0;
+}
+.bioProfile .title-detailing,
+.bioProfile .value-detailing{
+    width: 100%;
+    border: none;
+    justify-content: unset;
+}
+.blurImage{
+    filter: blur(100px);
+}
