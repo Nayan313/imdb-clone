@@ -11,10 +11,25 @@
 <body>
     <header>
         <div class="logo">logo</div>
-        <div class="search-bar">
-            <input type="search" name="" id="" placeholder="Search here">
-        </div>
     </header>
+    <div class="back-search">
+        <div class="logo"><img src="./assest/img/logo.png" alt=""></div>
+        <div class="search-bar-container">
+            <div class="search-bar">
+                <input type="search" class="SearchBar" name="" id="" placeholder="Search here">
+            </div>
+            <div class="search-results">
+            <div class="results-card">
+                <div class="img-section">
+                    <img src="https://image.tmdb.org/t/p/original/zDZowwb9GZGEctAu2PCpjiPQAMM.jpg" alt="">
+                </div>
+                <div class="backdrop"></div>
+                <h3 class="searchName">Fighter</h3>
+            </div>
+        </div>
+        </div>
+    </div>
+
 
     <div class="slideshow-container">
         <div class="in-slideshow-container">
@@ -31,9 +46,12 @@
                 <img class="background" src="">
             </div>
         </div>
-        
+
         <div class="navigate">
-            <div class="prev slidenavigateBtn" onclick="prevSlide()"><svg  width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" d="M5 8c.742 0 1.85-.733 2.78-1.475c1.2-.954 2.247-2.094 3.046-3.401C11.425 2.144 12 .956 12 0m0 0c0 .956.575 2.145 1.174 3.124c.8 1.307 1.847 2.447 3.045 3.401C17.15 7.267 18.26 8 19 8m-7-8v24"/></svg></div>
+            <div class="prev slidenavigateBtn" onclick="prevSlide()"><svg width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" stroke="currentColor"
+                        d="M5 8c.742 0 1.85-.733 2.78-1.475c1.2-.954 2.247-2.094 3.046-3.401C11.425 2.144 12 .956 12 0m0 0c0 .956.575 2.145 1.174 3.124c.8 1.307 1.847 2.447 3.045 3.401C17.15 7.267 18.26 8 19 8m-7-8v24" />
+                </svg></div>
             <div class="dot-section">
                 <div class="dot">01</div>
                 <div class="dot">02</div>
@@ -41,13 +59,16 @@
                 <div class="dot">04</div>
                 <div class="dot">05</div>
             </div>
-            <div class="next slidenavigateBtn" onclick="showSlides()"><svg  width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" d="M5 8c.742 0 1.85-.733 2.78-1.475c1.2-.954 2.247-2.094 3.046-3.401C11.425 2.144 12 .956 12 0m0 0c0 .956.575 2.145 1.174 3.124c.8 1.307 1.847 2.447 3.045 3.401C17.15 7.267 18.26 8 19 8m-7-8v24"/></svg></div>
+            <div class="next slidenavigateBtn" onclick="showSlides()"><svg width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" stroke="currentColor"
+                        d="M5 8c.742 0 1.85-.733 2.78-1.475c1.2-.954 2.247-2.094 3.046-3.401C11.425 2.144 12 .956 12 0m0 0c0 .956.575 2.145 1.174 3.124c.8 1.307 1.847 2.447 3.045 3.401C17.15 7.267 18.26 8 19 8m-7-8v24" />
+                </svg></div>
         </div>
     </div>
 
 
 
-   
+
 
     <div class="main">
         <h1>Top Movie</h1>
@@ -80,8 +101,9 @@
 
     </div>
 
-  
 
+
+    <script src="js/search.js"></script>
     <script src="js/autentication.js"></script>
     <script src="js/script.js"></script>
     <script src="js/app.js"></script>
