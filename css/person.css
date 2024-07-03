@@ -14,3 +14,10 @@
 .blurImage{
     filter: blur(100px);
 }
+.personPoster{
+    height: 390px;
+    border-radius: 8px;
+}
+.banner-detail-page .PersonName{
+    font-size: 6vw;
+}

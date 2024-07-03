@@ -16,18 +16,11 @@
     </div>
     <div class="banner">
         <div class="banner-detail-page">
-            <img class="PosterMovie" src="" alt="">
-            <!-- <img class="PosterMovie"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Scarlett_Johansson_by_Gage_Skidmore_2_%28cropped%2C_2%29.jpg/640px-Scarlett_Johansson_by_Gage_Skidmore_2_%28cropped%2C_2%29.jpg"
-                alt=""> -->
-            <h1 class="PersonName rgbColorImg">Person name</h1>
-            <!-- <h1 class="MovieName">Scarlett Johansson </h1> -->
+            <img class="personPoster" src="" alt="">
+            <h1 class="PersonName">Person name</h1>
         </div>
         
         <img class="backgroundDetailPage blurImage" src="" alt="">
-        <!-- <img class="backgroundDetailPage"
-            src="https://hips.hearstapps.com/hmg-prod/images/american-actress-scarlett-johansson-at-cannes-film-festival-news-photo-1685449533.jpg"
-            alt=""> -->
         <div class="liner-background"></div>
         <div class="liner-background-bottom"></div>
     </div>
@@ -42,6 +35,26 @@
                 </div>
             </div>
         </div>
+
+
+        <div class="personMovie">
+            <h1 class="Card-sec-title">Known for</h1>
+            <div class="cardSlider" id="cardSlider1">
+                <button class="prevBtn" id="cardSButton" onclick="cardS('cardSlider1', -1)">&#10094;</button>
+                <div class="card-section">
+                    <div class="cardSlides personMovie-card-section">
+                        <div class="personMovie-card cardS">
+                            <img src="https://image.tmdb.org/t/p/w500//yAvq3EG5W5WaegZHB7gNdlM2KED.jpg" alt="">
+                            <p><b>Amitabh Bachchan</b></p>
+                            <p>Ashwatthama</p>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="nextBtn" id="cardSButton" onclick="cardS('cardSlider1', 1)">&#10095;</button>
+            </div>
+        </div>
+
     </div>
     <script src="js/autentication.js"></script>
     <script src="js/personDetail.js"></script>
